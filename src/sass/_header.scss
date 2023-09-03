@@ -1,0 +1,143 @@
+header {
+  font-family: "Quattrocento Sans", sans-serif;
+  .navbar-container {
+    padding: 5vh 0;
+    width: 100%;
+    // background-color: rgb(113, 101, 85);
+    .row {
+      align-items: center;
+    }
+    .pages-box {
+      display: flex;
+      align-items: center;
+      // justify-content: space-around;
+      p {
+        padding: 0;
+        margin: 0;
+        margin: 0 2%;
+        position: relative;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 15px;
+        font-weight: bolder;
+        cursor: pointer;
+        .hover-line {
+          width: 0;
+          height: 2.5px;
+          background-color: #b4bb6b;
+          position: absolute;
+          bottom: -2px;
+          left: 0;
+          transition: 0.5s;
+        }
+        &:hover {
+          .hover-line {
+            width: 100%;
+          }
+        }
+      }
+
+      .active {
+        .hover-line {
+          width: 100%;
+          height: 2.5px;
+          background-color: #b4bb6b;
+          position: absolute;
+          bottom: -2px;
+          left: 0;
+          transition: 0.5s;
+        }
+      }
+      @media (max-width:956px) {
+        display: none;
+      }
+      @media (min-width:956px) {
+        display: flex;
+      }
+    }
+    .logo-box {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    .navbar-tools-box {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      .user-tool {
+        margin: 0 1.5vh;
+        i {
+          color: #fff;
+          font-size: 23px;
+        }
+      }
+    }
+  }
+}
+.offcanvas-control-btn {
+  color: #fff;
+  font-size: 23px;
+  &:hover{
+    border: 1px solid #fff;
+  }
+  @media (max-width:956px) {
+    display: block;
+  }
+  @media (min-width:956px) {
+    display: none;
+  }
+}
+.left-canvas {
+  width: 100% !important;
+  background-color: #222222;
+  .offcanvas-body {
+    display: flex;
+    position: relative;
+    padding: 0;
+    .left-canvas-close-btn{
+        position: absolute;
+        top: 4%;
+        right: 2%;
+        background: none;
+        border: none;
+        // background-color: red;
+        i{
+            font-size: 27px;
+            color: #fff;
+            transition: 0.5s;
+        }
+        &:hover{
+            i{
+                transform: rotate(45deg);
+            }
+        }
+    }
+    //
+    .left{
+        padding: 1vh 0;
+        width: 50%;
+        font-family: "Cormorant Garamond", serif;
+    }
+    .pages-box {
+      color: #fff;
+      display: block;
+      p {
+        width: max-content;
+        font-size: 20px;
+        padding: 1vh 0;
+        margin: 1vh 0 1vh 1vh;
+        font-family: "Cormorant Garamond", serif;
+        .hover-line {
+          bottom: 0;
+        }
+      }
+    }
+    //
+    .right{
+        padding: 1vh 0;
+        width: 50%;
+        background-color: #1a1a1a !important;
+    }
+  }
+}
