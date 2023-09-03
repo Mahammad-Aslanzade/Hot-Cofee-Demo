@@ -13,7 +13,7 @@ const Slider = () => {
 
                 <div className="carousel-inner">
                     <div className="carousel-item active" data-bs-interval="10000">
-                        <img src="https://hotcoffee.themerex.net/wp-content/uploads/2021/11/slides-1-1.jpg" className="d-block w-100" alt="..." />
+                            <img src="https://hotcoffee.themerex.net/wp-content/uploads/2021/11/slides-1-1.jpg" className="d-block w-100" alt="..." />
 
                         <div className="text-box">
                             <div className="text-main">

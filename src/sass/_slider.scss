@@ -1,14 +1,11 @@
 .slider-main {
-  position: absolute;
-  top: 0;
-  z-index: -1;
   .carousel-item {
     position: relative;
-    top: 0;
-    left: 0;
-
     img {
-      z-index: -1;
+      @media (max-width:770px) {
+        height: 100vh;
+        object-fit: cover;
+      }
     }
     .text-box {
       position: absolute;
@@ -16,7 +13,7 @@
       height: 85%;
       top: 15%;
       left: 0;
-      // background-color: red !important;
+      // background-cox r: red !important;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -76,5 +73,13 @@
       border-radius: 50%;
       font-size: 25px;
     }
+  }
+}
+.carousel-indicators{
+  button{
+    background-color: #b4bb6b !important;
+    border-radius: 50%;
+    width: 18px !important;
+    height: 18px !important;
   }
 }
