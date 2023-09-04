@@ -3,7 +3,8 @@
 @import 'search';
 @import 'socialMedia';
 @import 'scroll';
-.home-page{
-    position: absolute !important;
-    top: 0;
+@import 'home';
+
+.row{
+    margin: 0;
 }

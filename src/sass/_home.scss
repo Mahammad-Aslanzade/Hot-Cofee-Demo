@@ -1,0 +1,122 @@
+.home-page {
+  width: 100%;
+  position: absolute !important;
+  top: 0;
+}
+
+.our-coffee-section {
+  padding: 10vh 0;
+  background-color: #f6f2e9;
+  font-family: "Quattrocento Sans", sans-serif;
+  .container {
+    .row {
+      .col-left {
+        width: 100%;
+        .text-box {
+          width: 70%;
+          span {
+            color: #b98d58;
+            font-family: "Quattrocento Sans", sans-serif;
+            font-size: 13px;
+            font-weight: bolder;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+          }
+          h2 {
+            font-family: "Cormorant Garamond", serif;
+            font-size: 46px;
+            padding: 2vh 0;
+            line-height: 45px;
+          }
+        }
+        .image-container {
+          width: 100%;
+          display: flex;
+          justify-content: flex-end;
+          .img-box {
+            width: 70%;
+            position: relative;
+            margin-top: 5vh;
+            img {
+              width: 100%;
+            }
+            .circle {
+              position: absolute;
+              width: 35%;
+              bottom: 5%;
+              left: -20%;
+              @keyframes rotation {
+                0% {
+                  transform: rotate(0);
+                }
+                100% {
+                  transform: rotate(360deg);
+                }
+              }
+              animation-name: rotation;
+              animation-duration: 20s;
+              animation-timing-function: linear;
+              animation-iteration-count: infinite;
+            }
+          }
+        }
+        @media (max-width: 990px) and (min-width: 768px) {
+          .text-box {
+            width: 90%;
+          }
+          .image-container {
+            .img-box {
+              width: 90%;
+            }
+          }
+        }
+        @media (max-width: 430px) {
+          .text-box {
+            width: 100%;
+            h2 {
+              font-size: 35px;
+            }
+          }
+          .image-container {
+            .img-box {
+              margin-top: 1vh;
+            }
+          }
+        }
+      }
+      #left-part-col {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-between;
+        .col-right {
+          width: 85%;
+        }
+        img {
+          width: 100%;
+        }
+        span {
+          color: #888682;
+          font-size: 17px;
+        }
+        @media (max-width:992px) and (min-width:768px) {
+            .col-right{
+                width: 100%;
+            }
+        }
+        @media (max-width:768px) {
+            display: block;
+            img{
+                margin-bottom: 5vh;
+            }
+            .col-right-span{
+                width: 100%;
+                span{
+                    font-size: 14px;
+                }
+            }
+        }
+      }
+    }
+  }
+}
