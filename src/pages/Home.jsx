@@ -41,6 +41,17 @@ const Home = () => {
 
         </div>
       </div>
+
+      <div className="our-blends-section">
+        <div className="container">
+
+          <div className="text-box">
+            <span>Our Coffee</span>
+            <h2>We Grow & Harvest Every Coffee Grain with Love</h2>
+          </div>
+          
+        </div>
+      </div>
     </section>
   )
 }
